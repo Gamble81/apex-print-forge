@@ -1,0 +1,61 @@
+/* Apex logo imagery and forge-color theme */
+:root {
+  --ink: #06080e;
+  --paper: #d8dee5;
+  --orange: #ff5a1f;
+  --yellow: #ff9c24;
+  --line: rgba(43, 186, 255, .28);
+}
+
+body { background: #d8dee5; }
+
+.hero-art.logo-neon {
+  margin: 0;
+  background: #05070d;
+  position: relative;
+  overflow: hidden;
+  transform: rotate(2deg);
+  box-shadow: 13px 13px 0 #ff5a1f;
+}
+
+.logo-neon img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.logo-neon figcaption, .steel-mark figcaption {
+  position: absolute;
+  left: 16px;
+  bottom: 15px;
+  margin: 0;
+  padding: 6px 8px;
+  color: #d8dee5;
+  background: #06080e;
+  font: 9px 'DM Mono', monospace;
+  letter-spacing: .08em;
+}
+
+.intro { position: relative; }
+.intro > div { max-width: 620px; }
+
+.steel-mark {
+  position: absolute;
+  right: 4.5vw;
+  bottom: -95px;
+  width: min(28vw, 300px);
+  margin: 0;
+  padding: 8px;
+  background: #06080e;
+  box-shadow: 10px 10px 0 #168de2;
+  transform: rotate(3deg);
+}
+
+.steel-mark img { display: block; width: 100%; }
+.steel-mark figcaption { left: 14px; bottom: 14px; }
+
+.services { background: #06080e; }
+.contact { background: linear-gradient(120deg, #ff5a1f, #ff8a1f); }
+.primary { background: #168de2; color: #fff; }
+.ticker span, .services .section-number { color: #168de2; }
+
+@media (max-width: 700px) {
+  .hero-art.logo-neon { transform: none; }
+  .steel-mark { position: relative; right: auto; bottom: auto; width: 75%; margin: 42px 0 0 auto; }
+}
